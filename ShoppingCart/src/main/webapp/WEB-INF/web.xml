@@ -1,0 +1,36 @@
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+	      http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	    version="2.5">
+  <display-name>Archetype Created Web Application</display-name>
+  
+  <context-param>
+    <param-name>contextConfigLocation</param-name>
+    <param-value>com.niit.Config.SpringWebAppInitializer</param-value>
+  
+  </context-param>
+  
+  <servlet>
+  	<description>
+  	</description>
+  	<display-name>SpringWebAppInitializer</display-name>
+  	<servlet-name>SpringWebAppInitializer</servlet-name>
+  	<servlet-class>com.niit.Config.SpringWebAppInitializer</servlet-class>
+  	<load-on-startup>1</load-on-startup>
+  </servlet>
+
+	
+	<servlet-mapping>
+		<servlet-name>SpringWebAppInitializer</servlet-name>
+		<url-pattern>/SpringWebAppInitializer</url-pattern>
+	</servlet-mapping>
+	
+	
+
+	<welcome-file-list>
+	  <welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+
+	
+</web-app>
